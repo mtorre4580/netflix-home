@@ -1,0 +1,14 @@
+{
+  "name": "netflix-home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "serve -c serve.json"
+  },
+  "author": "mtorre4580@outlook.com",
+  "devDependencies": {
+    "serve": "^11.0.0"
+  }
+}

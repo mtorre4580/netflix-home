@@ -1,0 +1,31 @@
+:root {
+  --color-white: #fff;
+  --color-red: #ff0a16;
+  --color-black: #141414;
+  --color-rgba-grey: rgba(255, 255, 255, 0.4);
+  --color-rgba-black-03: rgba(0, 0, 0, 0.3);
+  --color-rgba-black-04: rgba(0, 0, 0, 0.4);
+}
+
+html,
+body {
+  background: var(--color-black);
+  color: var(--color-white);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.gallery {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.row-videos {
+  margin: 10px 0;
+  display: grid;
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 400px;
+}
+
+.boxshot:last-child {
+  margin-right: 0;
+}

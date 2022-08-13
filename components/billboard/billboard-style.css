@@ -1,0 +1,60 @@
+.row-billboard {
+  position: relative;
+}
+
+.billboard-background {
+  width: 1280px;
+  height: 720px;
+}
+
+.row-billboard-inline .billboard-background {
+  height: 192px;
+}
+
+.row-billboard-inline .billboard-metadata {
+  top: 15px;
+  right: 50px;
+  left: auto;
+}
+
+.billboard-metadata {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 1s, transform 1s;
+}
+
+.billboard-metadata-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.billboard-metadata-synopsis {
+  max-width: 500px;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.billboard-metadata.hidden {
+  opacity: 0;
+  transform: translate3d(10px, 0, 0);
+}
+
+.billboard-metadata-button {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 15px 0 0;
+  padding: 10px 25px;
+  color: var(--color-white);
+  border: 1px solid var(--color-rgba-grey);
+  box-shadow: 0 1px 2px var(--color-rgba-black-03);
+  background-color: var(--color-rgba-black-04);
+}
+
+.billboard-metadata-button-play {
+  background-color: var(--color-red);
+  border-color: var(--color-red);
+}

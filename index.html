@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- meta for responsive designs -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <script type="module">
+      import { render } from "./app.js";
+      import { data } from "./data.js";
+
+      // web-components
+      import BillboardComponent from "./components/billboard/billboard-component.js";
+      import LinkComponent from "./components/link/link-component.js";
+      import VideoComponent from "./components/video/video-component.js";
+
+      // define the web-components to use
+      customElements.define("billboard-component", BillboardComponent);
+      customElements.define("link-component", LinkComponent);
+      customElements.define("video-component", VideoComponent);
+
+      document.addEventListener("DOMContentLoaded", (event) => {
+        render(data);
+      });
+    </script>
+  </body>
+</html>
