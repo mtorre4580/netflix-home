@@ -15,7 +15,7 @@ This helps with both load and interactions on the page, since the content outsid
 
 Example
 
-```json
+```javascript
 .row-videos {
   margin: 10px 0;
   display: grid;
@@ -31,13 +31,13 @@ this solution is agnostic.
 
 For large projects I recommend using Lit https://lit.dev/ is easy for react developers same life cycle, reactive to props
 
-# What is your solution for handle a lot of images without using a library?
+# What is your solution for handle a lot of images?
 
 Using the loading property in the image tag, loading="lazy" for new browsers, if the browser is old you need to apply a polyfill to support this solution
 
 ``<img loading="lazy" importance="low" class="billboard-metadata-logo" alt="logo" />``
 
-# How to avoid colission between components?
+# How to avoid collision between components?
 
 Using web-components it's allows to encapsulate the CSS using the shadow DOM, using the Element.attachShadow() allows to open or close
 
