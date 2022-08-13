@@ -8,7 +8,7 @@ export default class VideoComponent extends HTMLElement {
   createTemplate() {
     const template = document.createElement("template");
     template.innerHTML = `
-      <link rel="stylesheet" href="/components/video/video-style.css">
+      <link rel="stylesheet" href="/netflix-home/components/video/video-style.css">
       <img loading="lazy" importance="low" class="boxshot" />
     `;
     return template;

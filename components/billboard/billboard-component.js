@@ -9,7 +9,7 @@ export default class BillboardComponent extends HTMLElement {
   createTemplate() {
     const template = document.createElement("template");
     template.innerHTML = `
-       <link rel="stylesheet" href="/components/billboard/billboard-style.css">
+       <link rel="stylesheet" href="/netflix-home/components/billboard/billboard-style.css">
         <section class="row-billboard">
           <img loading="lazy" importance="high" class="billboard-background" />
           <article class="billboard-metadata">

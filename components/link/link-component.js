@@ -8,7 +8,7 @@ export default class LinkComponent extends HTMLElement {
   createTemplate() {
     const template = document.createElement("template");
     template.innerHTML = `
-      <link rel="stylesheet" href="/components/link/link-style.css">
+      <link rel="stylesheet" href="/netflix-home/components/link/link-style.css">
       <a class="billboard-metadata-button" role="button"></a>
     `;
     return template;
