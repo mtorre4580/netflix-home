@@ -2,9 +2,12 @@
 
 Example nextflix home page using standard web APIs
 
+https://mtorre4580.github.io/netflix-home
+
 # Start
 
 - Install dependencies `npm i`
+- Change the path for local "/netflix-home" to ""
 - Run the local server `npm start`
 
 # How to handle a huge list without virtualization technique?
