@@ -1,8 +1,12 @@
 # Netflix Home
 
-Example nextflix home page using standard web APIs
+Example nextflix home page using standard web APIs https://mtorre4580.github.io/netflix-home
 
-https://mtorre4580.github.io/netflix-home
+<div style="display:flex; align-items:center">
+  <img src="https://github.com/mtorre4580/netflix-home/blob/main/example.png" alt="netflix-ui" />
+</div>
+
+
 
 # Start
 
@@ -10,7 +14,7 @@ https://mtorre4580.github.io/netflix-home
 - Change the path for local "/netflix-home" to ""
 - Run the local server `npm start`
 
-# How to handle a huge list without virtualization technique?
+## How to handle a huge list without virtualization technique?
 
 Using the new CSS property **content-visibility** and **contain-intrinsic-size**
 
@@ -27,24 +31,24 @@ Example
 }
 ```
 
-# Why use web-components?
+## Why use web-components?
 
 Web components is an standand in web development allows to reuse the components similar to React.js, Angular or Vue, instead using a framework
 this solution is agnostic.
 
 For large projects I recommend using Lit https://lit.dev/ is easy for react developers same life cycle, reactive to props
 
-# What is your solution for handle a lot of images?
+## What is your solution for handle a lot of images?
 
 Using the loading property in the image tag, loading="lazy" for new browsers, if the browser is old you need to apply a polyfill to support this solution
 
 ``<img loading="lazy" importance="low" class="billboard-metadata-logo" alt="logo" />``
 
-# How to avoid collision between components?
+## How to avoid collision between components?
 
 Using web-components it's allows to encapsulate the CSS using the shadow DOM, using the Element.attachShadow() allows to open or close
 
-# How to avoid renders and reflow when attach nodes in DOM?
+## How to avoid renders and reflow when attach nodes in DOM?
 
 If you need to iterate for example in a forEach and create new elements, one solution is use a DocumentFragment, this allows
 to store the elements in memory, because the document fragment is not part of the currrent document
