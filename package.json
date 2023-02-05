@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Netflix challenge for UI Engineer",
   "main": "index.js",
-  "private": true,
   "scripts": {
     "start": "serve -c serve.json"
   },
+  "license": "MIT",
   "author": "mtorre4580@outlook.com",
   "devDependencies": {
     "serve": "^14.2.0"
