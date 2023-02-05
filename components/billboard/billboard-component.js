@@ -65,7 +65,6 @@ export default class BillboardComponent extends HTMLElement {
   }
 
   disconnectedCallback() {
-    // remove the observer if exists
     this.observer?.disconnect();
   }
 

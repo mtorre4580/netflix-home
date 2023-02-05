@@ -1,25 +1,17 @@
 export function render(data) {
-  // Destructuring the payload for handle
   const { rows, billboards, videos } = data;
 
-  // Create the main element to attach all the rows and boxshots
   const main = document.createElement("main");
 
-  // Add the class for CSS
   main.classList.add("gallery");
 
-  // Check if has any videos to render...
   if (videos.length > 0) {
-    // hash with all the movies for access via "id"
     const videosMap = getMap(videos, "id");
 
-    // hash with all the billboards for access via "row"
     const billboardsMap = getMap(billboards, "row");
 
-    // Iterate each row and render the billboard or videos
     rows.forEach((row, indexRow) => {
       const billboard = billboardsMap[indexRow] || null;
-      // Check if the videos is a billboard
       if (billboard) {
         const billboardRow = createRowBillboard(billboard, videosMap[row]);
         main.appendChild(billboardRow);
@@ -32,7 +24,6 @@ export function render(data) {
       }
     });
 
-    // Apply all the rows only 1 reflow
     document.body.appendChild(main);
   }
 }
@@ -63,22 +54,16 @@ function createRowVideos({
 }) {
   const row = document.createElement("div");
 
-  // Add the class for CSS
   row.classList.add("row-videos");
 
-  // Add the style to dynamic rows and columns (1 reflow style recalc)
   row.style = `grid-template-columns: repeat(auto-fill, minmax(253px, 1fr)); grid-template-rows: ${columnsSize}`;
 
-  // Create the component <video-component />
   const videoComponent = document.createElement("video-component");
 
-  // Iterate to create the row with the videos
   array.forEach((id) => {
     const video = videos[id] || null;
-    // Validate if the video exists
     if (video) {
       const { boxart, title } = video;
-      // better performance than "createElement"
       let cloneComponent = videoComponent.cloneNode(true);
       cloneComponent.setAttribute("boxart", boxart);
       cloneComponent.setAttribute("title", title);
@@ -108,7 +93,6 @@ function createRowBillboard(billboard, video) {
 
   const billboardComponent = document.createElement("billboard-component");
 
-  // check if has synopsis to avoid render the element
   if (synopsis) billboardComponent.setAttribute("synopsis", synopsis);
 
   billboardComponent.setAttribute("background", video[typesBackground[type]]);

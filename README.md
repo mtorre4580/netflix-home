@@ -6,8 +6,6 @@ Example nextflix home page using standard web APIs https://mtorre4580.github.io/
   <img src="https://github.com/mtorre4580/netflix-home/blob/main/example.png" alt="netflix-ui" />
 </div>
 
-
-
 # Start
 
 - Install dependencies `npm i`

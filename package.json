@@ -1,7 +1,7 @@
 {
   "name": "netflix-home",
   "version": "1.0.0",
-  "description": "",
+  "description": "Netflix challenge for UI Engineer",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -9,6 +9,6 @@
   },
   "author": "mtorre4580@outlook.com",
   "devDependencies": {
-    "serve": "^11.0.0"
+    "serve": "^14.2.0"
   }
 }
