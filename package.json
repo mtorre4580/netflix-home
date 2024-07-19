@@ -7,7 +7,7 @@
     "start": "serve -c serve.json"
   },
   "license": "MIT",
-  "author": "mtorre4580@outlook.com",
+  "author": "mtorre4580",
   "devDependencies": {
     "serve": "^14.2.0"
   }
